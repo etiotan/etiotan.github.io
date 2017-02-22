@@ -1,0 +1,35 @@
+//mixins & imports they work globally as long as its in your main sass
+@import ./mixins.sass
+@import ./partials/box
+@import ./partials/work
+@import ./partials/pyramid.sass
+@import ./partials/nav.sass
+@import ./partials/reveals.sass
+
+html
+  min-height: 100vh
+  max-width: 100vw
+
+body
+  margin: 0
+  font-family: "Rubik", sans-serif
+  background-color: #d1cdc7
+  overflow-x: hidden
+  overflow-y: hidden
+  font-weight: 550
+  -webkit-tap-highlight-color: transparent
+.homepage-wrap
+  width: 100%
+  height: 100%
+  display: inline-block
+  text-align: center
+  position: relative
+
+#name
+  text-align: center
+  font-size: 3vmin
+  color: #FFF8E7
+  display: inline-block
+  margin-top: 1vmin
+
+@import ./partials/media

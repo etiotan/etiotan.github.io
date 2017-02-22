@@ -1,0 +1,17 @@
+html
+  include pug/head.pug
+
+  body
+  .homepage-wrap
+    #name
+      |Etio Tan
+    include pug/box.pug
+    include pug/nav.pug
+    include pug/pyramid.pug
+    ul.projects-list
+      li.work-1
+        a(href="https://etiotan.github.io/photo-gallery/app/" target="_blank") Image Gallery
+      li.work-2 fin300
+
+  script(src='./minjs/jquery-3.1.1.min.js')
+  script(src='./minjs/scripts.js')

@@ -1,0 +1,54 @@
+@keyframes spin
+  from
+    transform: rotateY(0)
+  to
+    transform: rotateY(360deg)
+
+.pyramid-gyro
+  +centerer
+  pointer-events: none
+  perspective: 1000px
+  perspective-origin: 50% 100px
+  //for addClass & removeclass animations
+  transition: all 0.5s ease-in-out
+.pyramid-axis
+  position: relative
+  width: 200px
+  transform-style: preserve-3d
+  animation: spin 5s infinite linear
+
+.pyramid-wall
+  position: absolute
+  border: 100px solid transparent
+  h1
+    position: absolute
+.front
+  bottom: -20px
+  border-bottom: 200px solid #5F9EA0
+  transform: translateZ(25px) rotateX(30deg)
+
+.back
+  bottom: -20px
+  border-bottom: 200px solid #B0C4DE
+  transform: translateZ(-25px) rotateY(180deg) rotateX(30deg)
+
+.left
+  bottom: -20px
+  left: 75px
+  border-bottom: 200px solid #87CEEB
+  transform: rotateY(270deg) translateX(-100px) rotateX(30deg)
+  transform-origin: center left
+
+.right
+  bottom: -40px
+  right: 150px
+  border-bottom: 200px solid #6A5ACD
+  transform: rotateY(-270deg) translateX(100px) rotateX(30deg)
+  transform-origin: top right
+
+.bottom
+  width: 200px
+  height: 200px
+  background: #4169E1
+  transform: rotateX(90deg) translateY(100px)
+  transform-origin: bottom center

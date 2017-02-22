@@ -1,0 +1,27 @@
+.box
+  pointer-events: none
+  opacity: 0
+  background-color: #fcf3e7
+  max-width: 1000
+  width: 60%
+  height: 50%
+  transition: opacity 200ms ease-in
+  +centerer
+  transform-origin: 0 0
+  perspective: 800px
+
+  img
+    position: fixed
+    bottom: -25%
+    right: -5%
+    opacity: 0.6
+    width: 25%
+    height: 50%
+
+  p
+    font-size: 5vmin
+    +centerer
+    margin: 0
+    color: #191919
+    width: 95%
+    line-height: 1.2em

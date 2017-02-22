@@ -1,0 +1,28 @@
+//smaller sized mobile phones
+@media (max-width: 450px)
+  .work-container
+    font-size: 2vmin
+    max-height: 100vmin
+  .pyramid-gyro
+    display: none
+    opacity: 0
+  .navigation-bar
+    display: inline-block
+    left: 50%
+    margin-right: -50%
+    transform: translate(-50%, -50%)
+    padding: 0
+    z-index: 1
+    position: absolute
+    li
+      display: block
+      font-size: 3vmin
+//smartphones, Android phones, landscape iPhone
+@media (min-width: 450px)
+  .work-container
+    font-size: 1.5vmin
+//portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android), laptop..
+@media (min-width: 600px)
+  .work-container
+    font-size: 2vmin
+    max-height: 83vmin

@@ -1,0 +1,88 @@
+//works
+$cream: #F8ECC2
+
+.work-container
+  background-color: rgba($cream, 0)
+  width: 70%
+  //max-height 80 vmin works suprisingly well!
+  max-height: 83vmin
+  box-sizing: border-box
+  +centerer
+  display: flex
+  justify-content: space-between
+  pointer-events: none
+  border-bottom: solid .5vmin
+.work-left
+  display: flex
+  flex-grow: 1
+  flex-direction: column
+  text-align: left
+  width: 65%
+  transition: all 1s ease-in-out
+  margin: 2vmin
+
+.work-left-text
+  width: 100%
+  line-height: 2em
+
+.title
+  font-size: 5vmin
+  border: solid .5vmin
+  text-align: center
+  width: 100%
+
+
+.work-right
+  width: 35%
+  display: block
+  margin: 2vmin
+
+
+  img
+    width: 100%
+    height: 100%
+    box-sizing: border-box
+
+
+
+//this is the command to hide and show works!
+.projects-list
+  list-style: none
+  font-size: 6.5vmin
+
+  +centerer
+
+  font-family: "Rubik", sans-serif
+  margin: 5vmin 0 0 0
+  padding: 0
+  a
+    text-decoration: inherit
+    color: black
+  &:hover
+    cursor: pointer
+
+.return-portfolio
+  float: right
+  margin: 0
+  margin-right: 4vmin
+  font-size: 3.5vmin
+  color: #323232
+  display: none
+  font-family: "Rubik", sans-serif
+
+  &:hover
+    cursor: pointer
+
+//work
+.work-portfolio > *
+  opacity: 0
+  transition: all 500ms ease-in-out
+
+  //must have translate(-50,-50) because i used it as my centering tool.
+  transform: translateY(-5vmin) translate(-50%, -50%)
+
+
+  //Reveal the work
+  &.reveal
+    opacity: 1
+    transform: translate(-50%, -50%)
