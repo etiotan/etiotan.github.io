@@ -80,17 +80,11 @@ $(function() {
     // })
 
     //hover navigation
-    $(".projects-list li, a").hover(function() {
-        $(this).css({
-            "color": "#F8ECC2",
-            "transform": "translateY(-3px)",
-            "transition": "200ms ease-in-out"
-        })
+    $(".projects-list li").hover(function() {
+        $(this).addClass("hoverMe")
     }, function() {
-        $(this).css({
-            "color": "black",
-            "transform": "translateY(0)"
-        })
+        $(this).removeClass("hoverMe")
+
     })
 
     //navigation-bar hover effect
@@ -120,14 +114,12 @@ $(function() {
             $(".pyramid-gyro").fadeIn(200);
         })
     //Skills tab
-    $(".navigation-bar li:contains(Skills)").click(function() {
-        $(this).text("HTML, CSS, PHP, Javascript, jQuery, Gulp, Git ").addClass('skills-bold')
+    $(".skills").click(function() {
+        $(this).text("HTML/Jade, CSS/Sass/Less, Javascript, jQuery, Gulp, Git ").addClass('skills-bold')
+
+
     })
 
-    //Contacts tab
-    $(".navigation-bar li:contains(Contact)").click(function() {
-        $(this).text("etiotan@gmail.com").addClass('contact-bold')
-    })
 
 
 
