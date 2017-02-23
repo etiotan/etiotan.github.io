@@ -78,14 +78,14 @@ $(function() {
     //     $(".projects-list li").fadeIn(200);
     //     $(".pyramid-gyro").fadeIn(200);
     // })
-
-    //hover navigation
-    $(".projects-list li").hover(function() {
-        $(this).addClass("hoverMe")
-    }, function() {
-        $(this).removeClass("hoverMe")
-
-    })
+    //
+    // //hover navigation
+    // $(".projects-list li").hover(function() {
+    //     $(this).addClass("hoverMe")
+    // }, function() {
+    //     $(this).removeClass("hoverMe")
+    //
+    // })
 
     //navigation-bar hover effect
     $(".navigation-bar li").hover(function() {
@@ -119,6 +119,30 @@ $(function() {
 
 
     })
+
+
+//tooltip Hover
+
+// Tooltip only Text
+$('.masterTooltip').hover(function(){
+        // Hover over code
+        if ($(window).width() > 768) {
+        var title = $(this).attr('title');
+        $(this).data('tipText', title).removeAttr('title');
+        $('<p class="tooltip"></p>')
+        .text(title)
+        .appendTo('body')
+        .fadeIn('slow');
+}}, function() {
+        // Hover out code
+        $(this).attr('title', $(this).data('tipText'));
+        $('.tooltip').remove();
+}).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coordinates
+        var mousey = e.pageY + 10; //Get Y coordinates
+        $('.tooltip')
+        .css({ top: mousey, left: mousex })
+});
 
 
 
