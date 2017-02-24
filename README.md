@@ -22,3 +22,5 @@ A personal portfolio is a must have for any front-end dev. I want to be able to 
 
 
 **https://etiotan.github.io/portfolio/app**
+
+**Was transfered from another one of my repo's so naturally there should be more commits**
