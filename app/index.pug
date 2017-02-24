@@ -1,19 +1,16 @@
-html
+html.masterTooltip(title='Hi, I am Etio')
+  //css/meta/etc
   include pug/head.pug
 
-  body.masterTooltip(title='Hi, I am Etio')
-  .homepage-wrap
-    #name
-      |Etio Tan
+  body
+    //rotates the page
+    .rotate-page
+      #name
+        |Etio Tan
     include pug/box.pug
     include pug/nav.pug
     include pug/pyramid.pug
-    ul.projects-list
-      li.masterTooltip(title='HTML, LESS, Bootstrap, jQuery, PHP')
-        a(href="https://etiotan.github.io/cookie-bootstrap/" target="_blank") Cookie Cutter
-      li.masterTooltip(title='Jade, Sass, Bootstrap, jQuery')
-        a(href="https://etiotan.github.io/photo-gallery/app/" target="_blank") Image Gallery
-      li.masterTooltip(title='View all projects')
-        a(href="https://github.com/etiotan" target="_blank") GitHub
+    include pug/projects.pug
+  //jquery&js
   script(src='./minjs/jquery-3.1.1.min.js')
   script(src='./minjs/scripts.js')

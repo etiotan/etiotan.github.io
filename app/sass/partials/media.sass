@@ -1,16 +1,16 @@
 //smaller sized mobile phones
 @media (max-width: 768px)
   .pyramid-gyro
-    display: none
     opacity: 0
   .navigation-bar
-    display: inline-block
     left: 50%
     margin-right: -50%
     transform: translate(-50%, -50%)
-    padding: 0
-    z-index: 1
-    position: absolute
     li
       display: block
-      font-size: 3vmin
+  .box
+    transform: rotateX(0), rotateY(0), translate(-50%,-50%)
+//no pyramid heights
+@media (max-height: 500px)
+  .pyramid-gyro
+    opacity: 0
