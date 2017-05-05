@@ -87,7 +87,7 @@ $(document).ready(function () {
     })
     //Skills tab
     $(".skills").click(function() {
-        $(this).text("HTML/Jade, CSS/Sass/Less, React, Lodash, Webpack, Javascript, jQuery, Gulp, Git").addClass('skills-bold')
+        $(this).text("HTML, CSS/Sass, Javascript, React, Web3").addClass('skills-bold')
 
     })
 
